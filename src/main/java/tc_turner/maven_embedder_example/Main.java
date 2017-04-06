@@ -1,4 +1,4 @@
-package afriat.frank.tools.maven;
+package tc_turner.maven_embedder_example;
 
 import org.apache.maven.cli.MavenCli;
 
