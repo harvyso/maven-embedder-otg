@@ -12,35 +12,54 @@
     </properties>
 
     <dependencies>
+
+        <!-- Logger required by maven -->
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-embedder</artifactId>
-            <version>3.3.3</version>
+            <version>3.3.9</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-settings</artifactId>
-            <version>3.3.3</version>
+            <version>3.3.9</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-core</artifactId>
-            <version>3.3.3</version>
+            <version>3.3.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-model</artifactId>
+            <version>3.3.9</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-settings-builder</artifactId>
-            <version>3.3.3</version>
+            <version>3.3.9</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-repository-metadata</artifactId>
-            <version>3.3.3</version>
+            <version>3.3.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-artifact</artifactId>
+            <version>3.3.9</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-aether-provider</artifactId>
-            <version>3.3.3</version>
+            <version>3.3.9</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.aether</groupId>
@@ -63,9 +82,9 @@
             <version>1.0.2.v20150114</version>
         </dependency>
         <dependency>
-            <groupId>org.sonatype.sisu</groupId>
-            <artifactId>sisu-guice</artifactId>
-            <version>3.2.5</version>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>4.0</version>
         </dependency>
         <dependency>
             <groupId>javax.inject</groupId>
@@ -78,19 +97,24 @@
             <version>1.0</version>
         </dependency>
         <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-interpolation</artifactId>
+            <version>1.21</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-plugin-api</artifactId>
-            <version>3.3.3</version>
+            <version>3.3.9</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-model-builder</artifactId>
-            <version>3.3.3</version>
+            <version>3.3.9</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-builder-support</artifactId>
-            <version>3.3.3</version>
+            <version>3.3.9</version>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -98,9 +122,19 @@
             <version>18.0</version>
         </dependency>
         <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-compat</artifactId>
+            <version>3.3.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.wagon</groupId>
+            <artifactId>wagon-provider-api</artifactId>
+            <version>2.10</version>
+        </dependency>
+        <dependency>
             <groupId>org.codehaus.plexus</groupId>
             <artifactId>plexus-utils</artifactId>
-            <version>3.0.20</version>
+            <version>3.0.22</version>
         </dependency>
         <dependency>
             <groupId>org.codehaus.plexus</groupId>
@@ -110,7 +144,7 @@
         <dependency>
             <groupId>org.eclipse.sisu</groupId>
             <artifactId>org.eclipse.sisu.plexus</artifactId>
-            <version>0.3.0</version>
+            <version>0.3.2</version>
         </dependency>
         <dependency>
             <groupId>javax.enterprise</groupId>
@@ -125,12 +159,12 @@
         <dependency>
             <groupId>org.eclipse.sisu</groupId>
             <artifactId>org.eclipse.sisu.inject</artifactId>
-            <version>0.3.0</version>
+            <version>0.3.2</version>
         </dependency>
         <dependency>
             <groupId>org.codehaus.plexus</groupId>
             <artifactId>plexus-component-annotations</artifactId>
-            <version>1.5.5</version>
+            <version>1.6</version>
         </dependency>
         <dependency>
             <groupId>org.sonatype.plexus</groupId>
@@ -153,35 +187,11 @@
             <version>1.2</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.maven</groupId>
-            <artifactId>maven-compat</artifactId>
-            <version>3.3.3</version>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.maven</groupId>
-            <artifactId>maven-model</artifactId>
-            <version>3.3.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.maven</groupId>
-            <artifactId>maven-artifact</artifactId>
-            <version>3.3.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.plexus</groupId>
-            <artifactId>plexus-interpolation</artifactId>
-            <version>1.21</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.maven.wagon</groupId>
-            <artifactId>wagon-provider-api</artifactId>
-            <version>2.9</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.5</version>
-        </dependency>
+
     </dependencies>
 
     <build>
